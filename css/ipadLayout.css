@@ -1,0 +1,63 @@
+header {
+    height: 40px;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin-top: 40px;
+    font-family: HelveticaNeue;
+    background-image: url("../img/darkwood_portrait.jpg");
+}
+
+footer {
+    height: 40px;
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.order {
+    box-sizing: border-box;
+    background-color: white;
+    width: 44%;
+    float: left;
+    border-radius: 10px;
+    min-height: 40px;
+    margin: 3% 3% 0 3%;
+    padding: 5px;
+    box-shadow: 0px 0px 10px #888;
+    border: 1px solid grey;
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.order .items {
+    text-align: left;
+}
+
+.order .items input[type=submit] {
+    margin-top: 20px;
+}
+
+.order span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
