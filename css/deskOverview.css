@@ -1,0 +1,32 @@
+h2{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 2px black;
+	color: black;
+	text-align: center;
+	font-size: 25px;
+}
+
+.desks li{
+	font-size: 20px;
+	padding: 10px;
+	height: 20px;
+}
+
+.desks a{
+	text-decoration: none;
+	color: black;
+}
+
+.desks li .deskName{
+	float: left;
+}
+
+.desks li .deskAmount{
+	float: right;
+}
+
+body{
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
