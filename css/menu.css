@@ -1,4 +1,46 @@
 
+header{
+	top: 0px;
+	text-align: center;
+}
+
+footer{
+	bottom: 0px;
+}
+
+footer, header{
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	height: 30px;
+	padding-top: 10px;
+	color: white;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+footer ul li{
+	display: inline-block;
+	width: 49%;
+	text-align:center;
+}
+
+footer ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+body{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 section{
 	margin-top: 50px;
 }
@@ -6,6 +48,14 @@ section{
 article{
 	height: 70px;
 	padding: 5px;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 }
 
 article .thumb {
@@ -28,25 +78,21 @@ article .anz .count{
 	float: left;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	padding-right: 20px;
 }
 
 article .anz .buttons{
 	float: left;
-	padding: 3px;
+	padding: 1px;
 }
 
-article .anz .buttons div{
-	margin: 0px;
-	border: solid 1px black;
-	border-radius: 5px;
-	padding-left: 5px;
-	background-color: green;
-	width: 15px;
-	height: 20px;
+article .anz .buttons a{
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	min-width: 10px;
+	height: 10px;
 }
-
-
-
 
 
 
