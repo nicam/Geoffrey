@@ -1,4 +1,8 @@
 
+footer li{
+	cursor: pointer;
+}
+
 article .thumb {
 	width: 70px;
 	height: 70px;

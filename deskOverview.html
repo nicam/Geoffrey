@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/buttons.css" />
 		<link rel="stylesheet" href="css/deskOverview.css" />
 		
-		<script type="text/javascript">
+		<script type="text/javascript">		
 			window.onload = function(){
 				// fake list
 				var li = document.getElementsByTagName("li")[0];
@@ -37,7 +37,7 @@
        	<h2>Tischübersicht</h2>
        	
        	<ul class="desks mobileList"> 
-			<a href="cashier.html?deskid=1">
+			<a onclick="javascript: document.location = 'cashier.html?deskid=1';">
 				<li>
 					<div class="deskName">Tisch 1</div>
 					<div class="deskAmount">39.90 CHF</div>

@@ -15,7 +15,7 @@
 		<script type="text/javascript">
 			window.onload = function(){
 				// fake list
-				var li = document.getElementsByTagName("li")[0];
+				var li = document.getElementsByTagName("li")[1];
 				for(var i=0; i<20; i++){
 					var newli = li.cloneNode(true);
 					li.parentNode.appendChild(newli);
@@ -24,7 +24,6 @@
 				// scroll to 0px to make the safari header on iphone invisible
 				window.scrollTo(0, 2000);
 				setTimeout(function(){window.scrollTo(0, 0);}, 100);
-				
 			};
 			
 			function add(elem){
@@ -69,6 +68,10 @@
 					return false;
 				}
 			};
+			
+			function theBillPlease(){
+				return confirm("Zahlungsbegehren absenden?");
+			};
 		</script>
 		
 	</head>
@@ -77,7 +80,10 @@
 			<h1>Geoffrey</h1>
        	</header>
        	<ul class="products mobileList"> 
-			<li>
+			<li class="category">
+           		Alk. Getränke
+		    </li>
+		    <li>
            		<article>
 					<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 					<div class="description">
@@ -102,7 +108,7 @@
 						<a href="" onclick="javascript: return order();">Bestellen</a>
 				    </li>
 				    <li>
-				        Rechnung
+				        <a href="" onclick="javascript: return theBillPlease();">Rechnung</a>
 			        </li>
 				</ul>
             </div>
