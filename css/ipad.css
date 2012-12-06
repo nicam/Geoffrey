@@ -43,11 +43,10 @@
 }
 
 #iphone {
-  margin-left: auto;
+  margin-left: 140px;
   margin-right: auto;
   position: relative;
-  left: 0px;
-  top: 0px;
+  float: left;
 }
 
 #iphone {
