@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Registration</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/produkt.css" />
+</head>
+
+<body>
+    <form action="dashboard.html" method="post">
+        <fieldset>
+            <legend>Produkt erfassen / editieren </legend>
+            
+            <label for="pname">Produkt Name</label>
+            <input type="text" id="pname" name="pname"/>
+            <label for="auswahl">Kategorie</label>
+            <select name="kategorie" id="auswahl" size="1">
+                <option>Getraenke</option>
+                <option>Vorspeise</option>
+                <option>Hauptspeise</option>
+                <option>Dessert</option>
+            </select>
+            <label for="preis">Preis in CHF</label>
+            <input type="text" id="preis" name="preis"/>
+            
+            <label for"bild"> Bild </label>
+            <input type="file" id="bild" name="bild"/>
+            
+            <label for="beschreibung">Produkt Beschreibung</label>
+            <textarea name="beschreibung" cols="45" rows="10"></textarea>
+            
+            <input type="submit" class="button" id="buttonid" value="Produkt Speichern" />
+        </fieldset>       
+    </form>  
+</body>
+</html>

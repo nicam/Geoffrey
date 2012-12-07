@@ -1,0 +1,29 @@
+body {
+  font-family: verdana, sans-serif;
+   width: 250px;
+}
+label {
+  display: block;
+  width: 150px;
+  float: left;
+  margin-top: 12px;
+}
+input {
+  display: block;
+  width: 220px;
+  margin: 15px 0 10px 0px;
+}
+
+#buttonid{
+    margin-left: 160px;
+}
+
+select{
+  margin-top: 15px;
+}
+#bild{
+  margin-top: 22px;
+}
+
+
+
