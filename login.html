@@ -2,25 +2,44 @@
 <html>
 <head>
   <title>Registration</title>
-  <link rel="stylesheet" type="text/css" href="css/login.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/form.css" />
 </head>
 
 <body>
-    <form action="dashboard.html" method="post">
-        <fieldset>
-            <legend>Geoffrey Login</legend>
-            
-            <label for="email">E-Mail:</label>
-            <input type="text" id="email" name="email"/>
-            
-            <label for="pw">Passwort</label>
-            <input type= "password" id="pw" name="pw"/>
-            
-            <input type="submit" class="button" id="buttonid" value="Login" />
-            
-            <a href="registration.html">Registrieren</a>
-        </fieldset>       
-    </form>
+	<header>
+		<h1>Geoffrey</h1>
+    </header>
+    <section>
+	    <form action="dashboard.html" method="post">
+	        <fieldset>
+	            <legend>Geoffrey Login</legend>
+	            
+	            <br />
+	            
+	            <label for="email">E-Mail:</label>
+	            <input type="text" id="email" name="email"/>
+	            
+	            <div class="clear"></div>
+	            
+	            <label for="pw">Passwort</label>
+	            <input type= "password" id="pw" name="pw"/>
+	            
+	            <div class="clear"></div>
+	            
+	            <label for="buttonid"></label>
+	            <input type="submit" class="bt_black" id="buttonid" value="Login" />
+	            
+	            <div class="clear"></div>
+	            
+	            <label for="regbutton"></label>
+	            <input id="regbutton" type="button" class="bt_black" onclick="javascript: document.location = 'registration.html';" value="Registrieren" />
+	        </fieldset>       
+	    </form>
+	</section>
     <script type="text/javascript">
     	alert("TIPP: Einfach auf login klicken ;-)");
     </script>
