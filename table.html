@@ -2,44 +2,70 @@
 <html>
 	<head>
 		<title>Table List Prototype</title>
-		<link rel="stylesheet" type="text/css" src="css/reset.css" />
-		<link rel="stylesheet" type="text/css" src="css/table.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/bootstrap.used.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/desktop.css" />
+		<link rel="stylesheet" href="css/dashboard.css" />
+		<link rel="stylesheet" href="css/table.css" />
 	</head>
 	<body>
 		<header>
+			<a class="bt_black" href="index.html">Logout</a>
 			<h1>Geoffrey</h1>
-		</header>
+       	</header>
 		<section>
-			<article>
-				<ul class="table-list">
-					<li>
-						<span>1</span>
-					</li>
-					<li>
-						<span>2</span>
-					</li>
-					<li>
-						<span>3</span>
-					</li>
-					<li>
-						<span>4</span>
-					</li>
-					<li>
-						<span>5</span>
-					</li>
-					<li>
-						<span>6</span>
-					</li>
-					<li>
-						<span>7</span>
-					</li>
-					<li>
-						<span>8</span>
-					</li>
-				</ul>
-			</article>
+			<h2>Erfasste Tische</h2>
+			<ul>
+				<li>
+					<article>
+						<h3 title="1">1</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="2">2</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="3">3</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="4">4</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="5">5</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="6">6</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="7">7</h3>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h3 title="19">19<h3>
+					</article>
+				</li>
+			</ul>
 		</section>
-		<nav>
-		</nav>
+		<section>
+			<h2>Tische verwalten</h2>
+			<form method="post">
+				<input type="text" placeholder="z.B. 1-12, 15, 18-21" />
+				<button class="btn btn-success">Erfassen</button>
+				<button class="btn btn-danger">L&ouml;schen</button>
+		</section>
 	</body>
 </html>

@@ -1,10 +1,16 @@
-@import url('reset.css');
-
-ul.table-list li {
-	float: left;
-	list-style: none;
+article {
+	background: url("../img/wood.jpg");
+	box-shadow: 0 5px 10px 0px #333;
 }
 
-span.table-number {
+article h3 {
+	padding-top: 25px;
+	font-size: 5em;
+	color: #fff;
 
+	text-shadow: -1px -1px rgba(255, 255, 255, 0.3);
+}
+
+input {
+	margin-bottom: 0px !important;
 }
