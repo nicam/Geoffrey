@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Overview Prototype</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/bootstrap.used.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<link rel="stylesheet" href="css/cashier.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/desktop.css" />
+		<link rel="stylesheet" href="css/product.css" />
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('section a').on('click', function(event) {
+					var e = $(this);
+					if(!e.hasClass('plus')) {
+						var o = $('section a.active'); o = o[0]; o = $(o);
+						e.addClass('active');
+						o.removeClass('active');
+						$('#'+e.attr('data-link')).show();
+						$('#'+o.attr('data-link')).hide();
+					}
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<a class="bt_black" href="#" onclick="history.back();">Back</a>
+			<h1>Geoffrey</h1>
+       	</header>
+		<section>
+			<ul>
+				<li>
+					<a href="#" class="active" data-link="food">
+						Essen <i class="icon-remove"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-link="drinks">
+						Kalte Getr&auml;nke <i class="icon-remove"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Warme Getr&auml;nke <i class="icon-remove"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Alkoholische Getr&auml;nke <i class="icon-remove"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="plus">
+						<i class="icon-plus"></i>
+					</a>
+				</li>
+			</ul>
+			<article id="food">
+				<ul class="desks mobileList"> 
+					<li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+			    </ul>
+			</article>
+			<article id="drinks">
+				<ul class="desks mobileList"> 
+					<li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+				    <li>
+						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<div class="deskName">Bier</div>
+						<div class="deskEdit">
+							<i class="icon-edit"></i>
+							<i class="icon-trash"></i>
+						</div>
+						<div class="deskAmount">5.15 CHF</div>
+				    </li>
+			    </ul>
+			</article>
+		</section>
+	</body>
+</html>
