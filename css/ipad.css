@@ -20,11 +20,37 @@
   top: 138px;
 }
 
+#iphone #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  top: 138px;
+}
+
 #ipad.landscape #frame {
   width: 1024px;
   height: 672px;
 }
 
+#iphone #frame {
+  width: 320px;
+  height: 480px;
+}
+
 .clear {
   clear: both;
+}
+
+#iphone {
+  margin-left: 140px;
+  margin-right: auto;
+  position: relative;
+  float: left;
+}
+
+#iphone {
+  background: url('../img/iphone_portrait.png') no-repeat;
+  width: 370px;
+  height: 750px;
 }

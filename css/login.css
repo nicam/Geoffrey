@@ -1,0 +1,22 @@
+body {
+  font-family: verdana, sans-serif;
+}
+label {
+  display: block;
+  width: 150px;
+  float: left;
+}
+input {
+  display: block;
+  margin: 10px 0 10px 0px;
+}
+
+#buttonid{
+    margin-left: 258px;
+}
+
+fieldset>a{
+  font-size: 10px;
+  margin-left: 250px;
+}
+
