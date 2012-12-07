@@ -2,19 +2,34 @@
 <html>
 <head>
   <title>Registration</title>
-  <link rel="stylesheet" type="text/css" href="css/kategorie.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/form.css" />
 </head>
 
 <body>
-    <form action="product.html" method="post">
-        <fieldset>
-            <legend>Kategorie erfassen / editieren </legend>
-            
-            <label for="kategorie">Kategorie Name</label>
-            <input type="text" id="kategorie" name="kategorie"/>
-            
-            <input type="submit" class="button" id="buttonid" value="Kategorie Speichern" />
-        </fieldset>       
-    </form>
+	<header>
+		<a class="bt_black" href="product.html">Back</a>
+		<h1>Geoffrey</h1>
+    </header>
+    <section>
+	    <form action="product.html" method="post">
+	        <fieldset>
+	            <legend>Kategorie erfassen / editieren </legend>
+	            
+	            <br />
+	            
+	            <label for="kategorie">Kategorie Name</label>
+	            <input type="text" id="kategorie" name="kategorie"/>
+	            
+	            <div class="clear"></div>
+	            
+	            <label for="buttonid"></label>
+	            <input type="submit" class="bt_black" id="buttonid" value="Kategorie Speichern" />
+	        </fieldset>       
+	    </form>
+    </section>
 </body>
 </html>

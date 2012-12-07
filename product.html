@@ -15,7 +15,7 @@
 			$(document).ready(function() {
 				$('section a').on('click', function(event) {
 					var e = $(this);
-					if(!e.hasClass('plus')) {
+					if(!e.hasClass('plus') && !e.hasClass('bt_black')) {
 						var o = $('section a.active'); o = o[0]; o = $(o);
 						e.addClass('active');
 						o.removeClass('active');
@@ -30,7 +30,7 @@
 	</head>
 	<body>
 		<header>
-			<a class="bt_black" onclick="history.back();">Back</a>
+			<a class="bt_black" href="dashboard.html">Back</a>
 			<h1>Geoffrey</h1>
        	</header>
 		<section>
