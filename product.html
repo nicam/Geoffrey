@@ -21,15 +21,16 @@
 						o.removeClass('active');
 						$('#'+e.attr('data-link')).show();
 						$('#'+o.attr('data-link')).hide();
+
+						return false;
 					}
-					return false;
 				});
 			});
 		</script>
 	</head>
 	<body>
 		<header>
-			<a class="bt_black" href="#" onclick="history.back();">Back</a>
+			<a class="bt_black" onclick="history.back();">Back</a>
 			<h1>Geoffrey</h1>
        	</header>
 		<section>
@@ -55,7 +56,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="plus">
+					<a href="kategorie_reg.html" class="plus">
 						<i class="icon-plus"></i>
 					</a>
 				</li>
@@ -140,6 +141,7 @@
 				    </li>
 			    </ul>
 			</article>
+			<input type="button" value="Produkt hinzuf&uuml;gen">
 		</section>
 	</body>
 </html>
