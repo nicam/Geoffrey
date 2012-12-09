@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Kassieransicht</title>
-		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    	<meta name="apple-mobile-web-app-capable" content="yes" />
-    	<link rel="apple-touch-icon" href="img/geoffrey.jpg" />
-		
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/mobile.css" />
-		<link rel="stylesheet" href="css/buttons.css" />
-		<link rel="stylesheet" href="css/cashier.css" />
-		<script type="text/javascript" src="js/cashier.js"></script>
-	</head>
-	<body>
-		<header>
-			<a class="bt_black" href="deskOverview.html">Back</a>
-			<h1>Geoffrey</h1>
-       	</header>
-       	
-       	<ul class="desks mobileList"> 
-			<li onclick="javascript: cash(this);">
-				<article>
-					<img class="thumb" src="img/beer.png" />
-					<div class="deskName">Bier</div>
-					<div class="deskAmount">5.15 CHF</div>
-				</article>
-		    </li>
-	    </ul>
-		<footer>
+    <head>
+        <title>Kassieransicht</title>
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-icon" href="img/geoffrey.jpg" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/mobile.css" />
+        <link rel="stylesheet" href="css/buttons.css" />
+        <link rel="stylesheet" href="css/cashier.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/cashier.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="bt_black" href="deskOverview.html">Back</a>
+            <h1>Geoffrey</h1>
+        </header>
+        <ul class="desks mobileList"> 
+            <li>
+                <article>
+                    <img class="thumb" src="img/beer.png" />
+                    <div class="deskName">Bier</div>
+                    <div class="deskAmount">5.15 CHF</div>
+                </article>
+            </li>
+        </ul>
+        <footer>
             <h1>Auswahl</h1>
             <h1 id="amount">0.00 CHF</h1>
             <br />
             <a class="bt_black" href="">Einkassieren</a>
-		</footer>
-	</body>
+        </footer>
+    </body>
 </html>
