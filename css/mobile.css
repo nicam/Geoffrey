@@ -36,7 +36,7 @@ footer ul li a{
 	text-decoration: none;
 }
 
-header a{
+header a, header button {
 	position: absolute;
 	left: 5px;
 	top: 3px;

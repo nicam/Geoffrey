@@ -3,6 +3,7 @@
 <head>
   <title>Registration</title>
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.used.css" />
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/buttons.css" />
   <link rel="stylesheet" href="css/desktop.css" />
@@ -11,16 +12,13 @@
 
 <body>
 	<header>
-		<a class="bt_black" href="login.html">Logout</a>
+		<button class="btn" onclick="window.location='product.html'">Back</button>
 		<h1>Geoffrey</h1>
     </header>
     <section>
+    	<h2>Produkt erfassen / editieren</h2>
 	    <form action="product.html" method="post">
 	        <fieldset>
-	            <legend>Produkt erfassen / editieren </legend>
-	            
-	            <br />
-	            
 	            <label for="pname">Produkt Name</label>
 	            <input type="text" id="pname" name="pname"/>
 	            
@@ -47,12 +45,12 @@
 	            <div class="clear"></div>
 	            
 	            <label for="beschreibung">Produkt Beschreibung</label>
-	            <textarea id="beschreibung" name="beschreibung" cols="45" rows="10"></textarea>
+	            <textarea id="beschreibung" name="beschreibung" rows="10"></textarea>
 	            
 	            <div class="clear"></div>
 	            
 	            <label for="buttonid"></label>
-	            <input type="submit" class="bt_black" id="buttonid" value="Speichern" />
+	            <button type="submit" class="btn" id="buttonid">Speichern</button>
 	        </fieldset>       
 	    </form>  
     </section>

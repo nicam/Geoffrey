@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('section a').on('click', function(event) {
+				$('nav a').on('click', function(event) {
 					var e = $(this);
 					if(!e.hasClass('plus') && !e.hasClass('bt_black')) {
 						var o = $('section a.active'); o = o[0]; o = $(o);
@@ -30,45 +30,47 @@
 	</head>
 	<body>
 		<header>
-			<a class="bt_black" href="dashboard.html">Back</a>
+			<button class="btn" onclick="window.location='dashboard.html'">Back</button>
 			<h1>Geoffrey</h1>
        	</header>
 		<section>
-			<ul>
-				<li>
-					<a href="#" class="active" data-link="food">
-						Essen <i class="icon-remove"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-link="drinks">
-						Kalte Getr&auml;nke <i class="icon-remove"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						Warme Getr&auml;nke <i class="icon-remove"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						Alkoholische Getr&auml;nke <i class="icon-remove"></i>
-					</a>
-				</li>
-				<li>
-					<a href="kategorie_reg.html" class="plus">
-						<i class="icon-plus"></i>
-					</a>
-				</li>
-			</ul>
+			<nav>
+				<ul>
+					<li>
+						<a href="#" class="active" data-link="food">
+							Essen <i class="icon-remove"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-link="drinks">
+							Kalte Getr&auml;nke <i class="icon-remove"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Warme Getr&auml;nke <i class="icon-remove"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Alkoholische Getr&auml;nke <i class="icon-remove"></i>
+						</a>
+					</li>
+					<li>
+						<a href="kategorie_reg.html" class="plus">
+							<i class="icon-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
 			<article id="food">
 				<ul class="desks mobileList"> 
 					<li>
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -76,8 +78,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -85,8 +87,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -98,8 +100,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -107,8 +109,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -116,8 +118,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -125,8 +127,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
@@ -134,8 +136,8 @@
 						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
-							<i class="icon-edit"></i>
-							<i class="icon-trash"></i>
+							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
+							<a href="#"><i class="icon-trash"></i></a>
 						</div>
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
