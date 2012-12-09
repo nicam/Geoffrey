@@ -12,8 +12,8 @@ html, body {
 
 body {
     margin-top: 40px;
-    font-family: HelveticaNeue;
-    background: url("../img/darkwood.jpg");
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("../img/darkwood.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;

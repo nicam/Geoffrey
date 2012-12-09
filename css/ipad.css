@@ -1,56 +1,55 @@
 #ipad {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  left: 0px;
-  top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 
 #ipad.landscape {
-  background: url('../img/ipad_landscape.png');
-  width: 1108px;
-  height: 852px;
+    background: url('../img/ipad_landscape.png');
+    width: 1108px;
+    height: 852px;
 }
 
 #ipad #frame {
-  border: none;
-  background: #fff;
-  position: absolute;
-  left: 42px;
-  top: 138px;
+    border: none;
+    background: #fff;
+    position: absolute;
+    left: 42px;
+    top: 138px;
 }
 
 #iphone #frame {
-  border: none;
-  background: #fff;
-  position: absolute;
-  left: 25px;
-  top: 138px;
+    border: none;
+    background: #fff;
+    position: absolute;
+    left: 25px;
+    top: 138px;
 }
 
 #ipad.landscape #frame {
-  width: 1024px;
-  height: 672px;
+    width: 1024px;
+    height: 672px;
 }
 
 #iphone #frame {
-  width: 320px;
-  height: 480px;
+    width: 320px;
+    height: 480px;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 #iphone {
-  margin-left: 140px;
-  margin-right: auto;
-  position: relative;
-  float: left;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 #iphone {
-  background: url('../img/iphone_portrait.png') no-repeat;
-  width: 370px;
-  height: 750px;
+    background: url('../img/iphone_portrait.png') no-repeat;
+    width: 370px;
+    height: 750px;
 }
