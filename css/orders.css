@@ -81,6 +81,10 @@ strong {
 	width: 20px;
 }
 
+.order .items table tr:last-child td {
+	padding-top: 20px;
+}
+
 .order span {
     font-size: 32px;
     font-weight: bold;

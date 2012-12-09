@@ -11,4 +11,7 @@ $(document).ready(function() {
 			o.hide();
 		}
 	});
+	$('form').on('submit', function(event) {
+		var e = $(this);
+	});
 });
