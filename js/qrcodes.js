@@ -5,4 +5,5 @@ window.onload = function(){
         var newli = li.cloneNode(true);
         li.parentNode.appendChild(newli);
     }
+    window.print();
 };
