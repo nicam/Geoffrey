@@ -1,80 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Kassieransicht</title>
-		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    	<meta name="apple-mobile-web-app-capable" content="yes" />
-    	<link rel="apple-touch-icon" href="http://home.arcor.de/weedman99/Prince_of_Bel-Air/geoffrey.jpg" />
-		
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/mobile.css" />
-		<link rel="stylesheet" href="css/buttons.css" />
-		<link rel="stylesheet" href="css/cashier.css" />
-		
-		<script type="text/javascript">		
-			window.onload = function(){
-				// fake list
-				var li = document.getElementsByTagName("li")[0];
-				for(var i=0; i<20; i++){
-					var newli = li.cloneNode(true);
-					li.parentNode.appendChild(newli);
-				}
-				
-				// scroll to 0px to make the safari header on iphone invisible
-				window.scrollTo(0, 2000);
-				setTimeout(function(){window.scrollTo(0, 0);}, 100);
-				
-			};
-			
-			function getNodeByClassName(node, classname){
-				if(node.className == classname){
-					return node;
-				}
-				for(var i=0; i<node.childNodes.length; i++){
-					var retNode = getNodeByClassName(node.childNodes[i], classname);
-					if(retNode) return retNode;
-				}
-			}
-			
-			function kaufm(x) {
-				var k = (Math.round(x * 100) / 100).toString();
-				k += (k.indexOf('.') == -1)? '.00' : '00';
-				return k.substring(0, k.indexOf('.') + 3);
-			}
-			
-			function cash(elem){
-				elem.className = "active";
-				var amount = parseFloat(getNodeByClassName(elem, "deskAmount").innerHTML, 10);
-				var totalAmount = parseFloat(document.getElementById("amount").innerHTML, 10);
-				totalAmount += amount;
-				totalAmount = kaufm(totalAmount);
-				totalAmount += " CHF";
-				document.getElementById("amount").innerHTML = totalAmount;
-			}
-		</script>
-		
-	</head>
-	<body>
-		<header>
-			<a class="bt_black" href="deskOverview.html">Back</a>
-			<h1>Geoffrey</h1>
-       	</header>
-       	
-       	<ul class="desks mobileList"> 
-			<li onclick="javascript: cash(this);">
-				<article>
-					<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
-					<div class="deskName">Bier</div>
-					<div class="deskAmount">5.15 CHF</div>
-				</article>
-		    </li>
-	    </ul>
-		<footer>
+    <head>
+        <title>Kassieransicht</title>
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-icon" href="img/geoffrey.jpg" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/mobile.css" />
+        <link rel="stylesheet" href="css/buttons.css" />
+        <link rel="stylesheet" href="css/cashier.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/cashier.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="bt_black" href="deskOverview.html">Back</a>
+            <h1>Geoffrey</h1>
+        </header>
+        <ul class="desks mobileList"> 
+            <li>
+                <article>
+                    <img class="thumb" src="img/beer.png" />
+                    <div class="deskName">Bier</div>
+                    <div class="deskAmount">5.15 CHF</div>
+                </article>
+            </li>
+        </ul>
+        <footer>
             <h1>Auswahl</h1>
             <h1 id="amount">0.00 CHF</h1>
             <br />
             <a class="bt_black" href="">Einkassieren</a>
-		</footer>
-	</body>
+        </footer>
+    </body>
 </html>

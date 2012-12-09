@@ -11,26 +11,11 @@
 		<link rel="stylesheet" href="css/product.css" />
         <meta charset="utf-8" />
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('nav a').on('click', function(event) {
-					var e = $(this);
-					if(!e.hasClass('plus') && !e.hasClass('bt_black')) {
-						var o = $('section a.active'); o = o[0]; o = $(o);
-						e.addClass('active');
-						o.removeClass('active');
-						$('#'+e.attr('data-link')).show();
-						$('#'+o.attr('data-link')).hide();
-
-						return false;
-					}
-				});
-			});
-		</script>
+		<script type="text/javascript" src="js/product.js"></script>
 	</head>
 	<body>
 		<header>
-			<button class="btn" onclick="window.location='dashboard.html'">Back</button>
+			<a href="dashboard.html"><button class="btn">Back</button></a>
 			<h1>Geoffrey</h1>
        	</header>
 		<section>
@@ -66,7 +51,7 @@
 			<article id="food">
 				<ul class="desks mobileList"> 
 					<li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -75,7 +60,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -84,7 +69,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -97,7 +82,7 @@
 			<article id="drinks">
 				<ul class="desks mobileList"> 
 					<li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -106,7 +91,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -115,7 +100,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -124,7 +109,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -133,7 +118,7 @@
 						<div class="deskAmount">5.15 CHF</div>
 				    </li>
 				    <li>
-						<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+						<img class="thumb" src="img/beer.png" />
 						<div class="deskName">Bier</div>
 						<div class="deskEdit">
 							<a href="produkt_reg.html"><i class="icon-edit"></i></a>
@@ -143,7 +128,7 @@
 				    </li>
 			    </ul>
 			</article>
-			<button class="btn btn-primary bt_new" onclick="window.location='produkt_reg.html'">Produkt hinzuf&uuml;gen</button>
+			<a href="produkt_reg.html"><button class="btn btn-primary bt_new">Produkt hinzuf&uuml;gen</button></a>
 		</section>
 	</body>
 </html>

@@ -5,75 +5,13 @@
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     	<meta name="apple-mobile-web-app-capable" content="yes" />
-    	<link rel="apple-touch-icon" href="http://home.arcor.de/weedman99/Prince_of_Bel-Air/geoffrey.jpg" />
-		
+    	<link rel="apple-touch-icon" href="img/geoffrey.jpg" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/mobile.css" />
 		<link rel="stylesheet" href="css/buttons.css" />
 		<link rel="stylesheet" href="css/menu.css" />
-		
-		<script type="text/javascript">
-			window.onload = function(){
-				// fake list
-				var li = document.getElementsByTagName("li")[1];
-				for(var i=0; i<20; i++){
-					var newli = li.cloneNode(true);
-					li.parentNode.appendChild(newli);
-				}
-				
-				// scroll to 0px to make the safari header on iphone invisible
-				window.scrollTo(0, 2000);
-				setTimeout(function(){window.scrollTo(0, 0);}, 100);
-			};
-			
-			function add(elem){
-				var actualCount = parseInt(elem.parentNode.parentNode.childNodes[1].innerHTML, 10);
-				actualCount++;
-				console.log(actualCount);
-				elem.parentNode.parentNode.childNodes[1].innerHTML = actualCount;
-			};
-			
-			function sub(elem){
-				var actualCount = parseInt(elem.parentNode.parentNode.childNodes[1].innerHTML, 10);
-				if(actualCount > 0) actualCount--;
-				console.log(actualCount);
-				elem.parentNode.parentNode.childNodes[1].innerHTML = actualCount;
-			};
-			
-			function getNodeByClassName(node, classname){
-				if(node.className == classname){
-					return node;
-				}
-				for(var i=0; i<node.childNodes.length; i++){
-					var retNode = getNodeByClassName(node.childNodes[i], classname);
-					if(retNode) return retNode;
-				}
-			}
-			
-			function order(){
-				var article = document.getElementsByTagName("article");
-				var articleString = "";
-				for(var i=0; i<article.length; i++){
-					var count = parseInt(getNodeByClassName(article[i], "count").innerHTML, 10);
-					if(count == 0) continue;
-					articleString += count;
-					articleString += " ";
-					articleString += getNodeByClassName(article[i], "description").getElementsByTagName("h1")[0].innerHTML;
-					articleString += " und ";
-				}
-				if(articleString.search(" und ")) articleString = articleString.substring(0, articleString.length - 5);
-				if(articleString != "") return confirm("Es werden " + articleString + " bestellt.");
-				else{
-					alert("Es wurde noch nichts ausgewählt.");
-					return false;
-				}
-			};
-			
-			function theBillPlease(){
-				return confirm("Zahlungsbegehren absenden?");
-			};
-		</script>
-		
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 	</head>
 	<body>
 		<header>
@@ -85,17 +23,17 @@
 		    </li>
 		    <li>
            		<article>
-					<img class="thumb" src="http://www.beer100.com/images/beermug.jpg" />
+					<img class="thumb" src="img/beer.png" />
 					<div class="description">
-						<h1 style="font-size: 16px; margin: 0px;">Bier</h1>
-						<p style="margin-top: 5px; font-size: 26px;">5.-</p>
+						<h1>Bier</h1>
+						<p>5.-</p>
 					</div>
 					<div class="anz">
 						<div class="count">0</div>
 						<div class="buttons">
-							<a onclick="javascript: add(this); return false;" class="bt_green">+</a>
+							<a class="bt_green">+</a>
 							<br />
-							<a onclick="javascript: sub(this); return false;" class="bt_red">-</a>
+							<a class="bt_red">-</a>
 						</div>
 					</div>
 				</article>
@@ -105,10 +43,10 @@
             <div>
 	            <ul>
 					<li>
-						<a href="" onclick="javascript: return order();">Bestellen</a>
+						<a href="" id="order">Bestellen</a>
 				    </li>
 				    <li>
-				        <a href="" onclick="javascript: return theBillPlease();">Rechnung</a>
+				        <a href="" id="bill">Rechnung</a>
 			        </li>
 				</ul>
             </div>

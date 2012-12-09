@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tisch&uuml;bersicht</title>
+		<title>Tischübersicht</title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -10,22 +10,7 @@
 		<link rel="stylesheet" href="css/mobile.css" />
 		<link rel="stylesheet" href="css/buttons.css" />
 		<link rel="stylesheet" href="css/deskOverview.css" />
-		<script type="text/javascript">		
-			window.onload = function(){
-				// fake list
-				var li = document.getElementsByTagName("li")[0];
-				for(var i=0; i<20; i++){
-					var newli = li.cloneNode(true);
-					li.parentNode.appendChild(newli);
-				}
-				
-				// scroll to 0px to make the safari header on iphone invisible
-				window.scrollTo(0, 2000);
-				setTimeout(function(){window.scrollTo(0, 0);}, 100);
-				
-			};
-		</script>
-		
+		<script type="text/javascript" src="js/deskOverview.js"></script>
 	</head>
 	<body>
 		<header>
@@ -35,11 +20,12 @@
        	<h2>Tischübersicht</h2>
        	
        	<ul class="desks mobileList"> 
-               <!-- Hack for iPhone Webapp Mode -->
-				<li onclick="javascript: document.location = 'cashier.html?deskid=1';">
+			<li>
+                <a href="cashier.html?deskid=1">
 					<div class="deskName">Tisch 1</div>
 					<div class="deskAmount">39.90 CHF</div>
-			    </li>
+                <a/>
+		    </li>
 	    </ul>
 	</body>
 </html>

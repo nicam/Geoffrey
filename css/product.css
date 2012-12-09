@@ -90,7 +90,6 @@ nav li a.plus:hover {
 }
 
 article {
-	padding: 20px;
 	border: 1px solid #000;
 	-webkit-border-radius: 5px;
 	-webkit-border-top-left-radius: 0;
@@ -101,12 +100,12 @@ article {
 	background-color: #ccc;
 	position: relative;
 	top: -1px;
-
 	z-index: 0;
 }
 
 article li {
 	width: 100%;
+    border-radius:5px;
 }
 
 article#drinks {

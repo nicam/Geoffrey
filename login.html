@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Registration</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/bootstrap.used.css" />
-  <link rel="stylesheet" href="css/mobile.css" />
-  <link rel="stylesheet" href="css/buttons.css" />
-  <link rel="stylesheet" href="css/desktop.css" />
-  <link rel="stylesheet" href="css/form.css" />
-  <meta charset="utf-8" />
-</head>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/bootstrap.used.css" />
+        <link rel="stylesheet" href="css/mobile.css" />
+        <link rel="stylesheet" href="css/buttons.css" />
+        <link rel="stylesheet" href="css/desktop.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+    	<header>
+    		<h1>Geoffrey</h1>
+        </header>
+        <section>
+        	<h2>Geoffrey Login</h2>
+    	    <form action="dashboard.html" method="post">
+    	        <fieldset>
+    	            <label for="email">E-Mail:</label>
+    	            <input type="text" id="email" name="email"/>
+    	            
+    	            <div class="clear"></div>
+    	            
+    	            <label for="pw">Passwort:</label>
+    	            <input type= "password" id="pw" name="pw"/>
+    	            
+    	            <div class="clear"></div>
+    	            
+    	            <label for="buttonid"></label>
+    	            <button type="submit" class="btn btn-primary" id="buttonid">Login</button>
 
-<body>
-	<header>
-		<h1>Geoffrey</h1>
-    </header>
-    <section>
-    	<h2>Geoffrey Login</h2>
-	    <form action="dashboard.html" method="post">
-	        <fieldset>
-	            <label for="email">E-Mail:</label>
-	            <input type="text" id="email" name="email"/>
-	            
-	            <div class="clear"></div>
-	            
-	            <label for="pw">Passwort:</label>
-	            <input type= "password" id="pw" name="pw"/>
-	            
-	            <div class="clear"></div>
-	            
-	            <label for="buttonid"></label>
-	            <button type="submit" class="btn btn-primary" id="buttonid">Login</button>
-
-	            <button id="regbutton" class="btn" onclick="window.location = 'registration.html'; return false;">Registrieren</button>
-	        </fieldset>       
-	    </form>
-	</section>
-</body>
+    	            <button id="regbutton" class="btn" onclick="window.location = 'registration.html'; return false;">Registrieren</button>
+    	        </fieldset>       
+    	    </form>
+    	</section>
+    </body>
 </html>

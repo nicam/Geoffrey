@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>iPad Default Layout</title>
+		<title>Open Positions</title>
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/bootstrap.used.css" />
 		<link href="css/mobile.css" rel="stylesheet" />
 		<link href="css/ipadLayout.css" rel="stylesheet" />
+        <link href="css/orders.css" rel="stylesheet" />
 		<link href="css/buttons.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<meta charset="utf-8" />
 		
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('div.head').on('click', function(event) {
-					var e = $(this).parent();
-					var o = e.find('div.order'); o = o[0]; o = $(o);
-					if(!e.hasClass('active')) {
-						e.addClass('active');
-						o.show();
-					}
-					else {
-						e.removeClass('active');
-						o.hide();
-					}
-				});
-			});
-		</script>
+		<script type="text/javascript" src="js/orders.js"></script>
 	</head>
 	<body>
 		<header>Geoffrey</header>
@@ -38,7 +24,7 @@
       		<div class="order">
 				<div class="items">
 					<form method="POST">
-						<table class="table table-unboardered">
+						<table class="table">
 							<tr>
 								<td><input id="bier1" type="checkbox" value="1"></td>
 								<td><label for="bier1">Bier</label></td>
@@ -85,7 +71,7 @@
 			<div class="order">
 				<div class="items">
 					<form method="POST">
-						<table class="table table-unboardered">
+						<table class="table">
 							<tr>
 								<td><input id="bier1" type="checkbox" value="1"></td>
 								<td><label for="bier1">Bier</label></td>
@@ -117,7 +103,7 @@
 			<div class="order">
 				<div class="items">
 					<form method="POST">
-						<table class="table table-unboardered">
+						<table class="table">
 							<tr>
 								<td><input id="bier1" type="checkbox" value="1"></td>
 								<td><label for="bier1">Bier</label></td>
