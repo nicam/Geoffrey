@@ -12,6 +12,8 @@ $(document).ready(function() {
 		}
 	});
 	$('form').on('submit', function(event) {
+        event.preventDefault();
 		var e = $(this);
+        e.parent().parent().parent().hide();
 	});
 });
