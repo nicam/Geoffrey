@@ -13,8 +13,8 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('article').on('click', function(event) {
-					var e = $(this);
+				$('div.table').on('click', function(event) {
+					var e = $(this).parent();
 					var o = e.find('div.order'); o = o[0]; o = $(o);
 					if(!e.hasClass('active')) {
 						e.addClass('active');
