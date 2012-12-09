@@ -9,19 +9,25 @@ window.onload = function(){
     // scroll to 0px to make the safari header on iphone invisible
     window.scrollTo(0, 2000);
     setTimeout(function(){window.scrollTo(0, 0);}, 100);
+    $('.bt_green').click(add);
+    $('.bt_red').click(sub);
+    $('#order').click(order);
+    $('#bill').click(theBillPlease);
 };
 
-function add(elem){
+function add(e){
+    e.preventDefault();
+    var elem = this;
     var actualCount = parseInt(elem.parentNode.parentNode.childNodes[1].innerHTML, 10);
     actualCount++;
-    console.log(actualCount);
     elem.parentNode.parentNode.childNodes[1].innerHTML = actualCount;
 }
 
-function sub(elem){
+function sub(e){
+    e.preventDefault();
+    var elem = this;
     var actualCount = parseInt(elem.parentNode.parentNode.childNodes[1].innerHTML, 10);
     if(actualCount > 0) actualCount--;
-    console.log(actualCount);
     elem.parentNode.parentNode.childNodes[1].innerHTML = actualCount;
 }
 
@@ -35,7 +41,8 @@ function getNodeByClassName(node, classname){
     }
 }
 
-function order(){
+function order(e){
+    e.preventDefault();
     var article = document.getElementsByTagName("article");
     var articleString = "";
     for(var i=0; i<article.length; i++){
@@ -47,13 +54,15 @@ function order(){
         articleString += " und ";
     }
     if(articleString.search(" und ")) articleString = articleString.substring(0, articleString.length - 5);
-    if(articleString != "") return confirm("Es werden " + articleString + " bestellt.");
+    if(articleString != "") confirm("Es werden " + articleString + " bestellt.");
     else{
         alert("Es wurde noch nichts ausgewählt.");
         return false;
     }
+    location.reload();
 }
 
-function theBillPlease(){
-    return confirm("Zahlungsbegehren absenden?");
+function theBillPlease(e){
+    e.preventDefault();
+    confirm("Zahlungsbegehren absenden?");
 }
