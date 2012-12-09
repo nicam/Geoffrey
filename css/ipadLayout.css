@@ -36,7 +36,7 @@ article {
 	float: left;
 }
 
-article .table {
+article .head {
 	background: url("../img/wood.jpg");
 	box-shadow: 0 5px 10px 0px #333;
 
@@ -45,7 +45,7 @@ article .table {
 	border-radius: 10px;
 }
 
-article.active .table {
+article.active .head {
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topleft: 10px;
@@ -60,7 +60,11 @@ article.active .table {
 	border-bottom-right-radius: 0;
 }
 
-.table h3 {
+strong {
+	font-weight: bold;
+}
+
+.head h3 {
 	text-align: center;
 	font-size: 3em;
 	color: #fff;
@@ -69,6 +73,7 @@ article.active .table {
 }
 
 .order {
+	display: none;
 	padding: 10px;
 
     -webkit-border-bottom-right-radius: 10px;
@@ -94,6 +99,15 @@ article.active .table {
 
 .order .items input[type=submit] {
     margin-top: 20px;
+}
+
+.order .items table th,
+.order .items table td {
+	border-top: 0px;
+}
+
+.order .items table td:first-child {
+	width: 20px;
 }
 
 .order span {

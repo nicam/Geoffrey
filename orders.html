@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('div.table').on('click', function(event) {
+				$('div.head').on('click', function(event) {
 					var e = $(this).parent();
 					var o = e.find('div.order'); o = o[0]; o = $(o);
 					if(!e.hasClass('active')) {
@@ -32,89 +32,95 @@
 		<header>Geoffrey</header>
       
 		<article class="active">
-			<div class="table">
+			<div class="head">
 				<h3>#1</h3>
 			</div>
-      		<div class="order">
+      		<div class="order" style="display:block;">
 				<div class="items">
 					<form method="POST">
-						<input id="bier1" type="checkbox" value="1">
-						<label for="bier1">Bier</label>
-						<br>
-
-						<input id="bier2" type="checkbox" value="1">
-						<label for="bier2">Bier</label>
-						<br />
-
-						<input id="bier3" type="checkbox" value="1">
-						<label for="bier3">Bier</label>
-						<br />
-
-						<input id="bier4" type="checkbox" value="1">
-						<label for="bier4">Bier</label>
-						<br />
-
-						<input id="bier5" type="checkbox" value="1">
-						<label for="bier5">Bier</label>
-						<br />
-
-						<input id="bier6" type="checkbox" value="1">
-						<label for="bier6">Bier</label>
-						<br />
-
-						<input id="bier7" type="checkbox" value="1">
-						<label for="bier7">Bier</label>
-						<br /><br />
-
-						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier3" type="checkbox" value="1"></td>
+								<td><label for="bier3">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier4" type="checkbox" value="1"></td>
+								<td><label for="bier4">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier5" type="checkbox" value="1"></td>
+								<td><label for="bier5">Bier</label></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
 					</form>
 				</div>
 			</div>
 		</article>
 		<article>
-			<div class="table">
+			<div class="head">
 				<h3>#2</h3>
 			</div>
-			<div class="order" style="display:none;">
+			<div class="order">
 				<div class="items">
 					<form method="POST">
-						<input id="bier1" type="checkbox" value="1">
-						<label for="bier1">Bier</label>
-						<br>
-
-						<input id="bier2" type="checkbox" value="1">
-						<label for="bier2">Bier</label>
-						<br />
-
-						<input id="bier3" type="checkbox" value="1">
-						<label for="bier3">Bier</label>
-						<br /><br />
-
-						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
 					</form>
 				</div>
 			</div>
 		</article>
 		<article>
-			<div class="table">
+			<div class="head">
 				<h3>#3</h3>
 			</div>
-			<div class="order" style="display:none;">
+			<div class="order">
 				<div class="items">
 					<form method="POST">
-						<input id="bier1" type="checkbox" value="1">
-						<label for="bier1">Bier</label>
-						<br>
-
-						<input id="bier2" type="checkbox" value="1">
-						<label for="bier2">Bier</label>
-						<br />
-
-						<input id="bier3" type="checkbox" value="1">
-						<label for="bier3">Bier</label>
-						<br /><br />
-
-						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+							</tr>
+							<tr>
+								<td><input id="bier3" type="checkbox" value="1"></td>
+								<td><label for="bier3">Bier</label></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
 					</form>
 				</div>
 			</div>

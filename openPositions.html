@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>iPad Default Layout</title>
+	<head>
+		<title>iPad Default Layout</title>
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/bootstrap.used.css" />
 		<link href="css/mobile.css" rel="stylesheet" />
@@ -9,32 +9,150 @@
 		<link href="css/buttons.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<meta charset="utf-8" />
-  </head>
-  <body>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('div.head').on('click', function(event) {
+					var e = $(this).parent();
+					var o = e.find('div.order'); o = o[0]; o = $(o);
+					if(!e.hasClass('active')) {
+						e.addClass('active');
+						o.show();
+					}
+					else {
+						e.removeClass('active');
+						o.hide();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
 		<header>Geoffrey</header>
       
 		<article>
-			<div class="table">
-				<h3>#1</h3> CHF 37.-
+			<div class="head">
+				<h3>#1</h3>
+			</div>
+      		<div class="order">
+				<div class="items">
+					<form method="POST">
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier3" type="checkbox" value="1"></td>
+								<td><label for="bier3">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier4" type="checkbox" value="1"></td>
+								<td><label for="bier4">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier5" type="checkbox" value="1"></td>
+								<td><label for="bier5">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td colspan="2">Total:</td>
+								<td><strong>CHF 25.–</strong></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
 			</div>
 		</article>
 		<article>
-			<div class="table">
-				<h3>#2</h3> CHF 37.-
+			<div class="head">
+				<h3>#2</h3>
+			</div>
+			<div class="order">
+				<div class="items">
+					<form method="POST">
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td colspan="2">Total:</td>
+								<td><strong>CHF 10.-</strong></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
 			</div>
 		</article>
 		<article>
-			<div class="table">
-				<h3>#3</h3> CHF 37.-
+			<div class="head">
+				<h3>#3</h3>
+			</div>
+			<div class="order">
+				<div class="items">
+					<form method="POST">
+						<table class="table table-unboardered">
+							<tr>
+								<td><input id="bier1" type="checkbox" value="1"></td>
+								<td><label for="bier1">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier2" type="checkbox" value="1"></td>
+								<td><label for="bier2">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td><input id="bier3" type="checkbox" value="1"></td>
+								<td><label for="bier3">Bier</label></td>
+								<td>CHF 5.–</td>
+							</tr>
+							<tr>
+								<td colspan="2">Total:</td>
+								<td><strong>CHF 15.–</strong></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
 			</div>
 		</article>
-
-    <div class="clear"></div>
-      <footer>
-          <ul>
-              <li><a href="orders.html">Bestellungen / Zahlungsbegehren</a></li>
-              <li><a href="openPositions.html">offene Positionen</a></li>
-          </ul>
-      </footer>
-  </body>
+		<div class="clear"></div>
+		<footer>
+			<ul>
+				<li><a href="orders.html">Bestellungen / Zahlungsbegehren</a></li>
+				<li><a href="openPositions.html">offene Positionen</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
