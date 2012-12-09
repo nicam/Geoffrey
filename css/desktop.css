@@ -33,7 +33,7 @@ section {
 	margin: 20px auto;
 	padding: 20px;
 	width: 70%;
-	text-align: left;
+    max-width: 775px;
 
 	border-radius: 10px;
 	-moz-border-radius: 10px;
