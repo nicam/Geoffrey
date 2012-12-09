@@ -6,12 +6,10 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     	<meta name="apple-mobile-web-app-capable" content="yes" />
     	<link rel="apple-touch-icon" href="http://home.arcor.de/weedman99/Prince_of_Bel-Air/geoffrey.jpg" />
-		
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/mobile.css" />
 		<link rel="stylesheet" href="css/buttons.css" />
 		<link rel="stylesheet" href="css/deskOverview.css" />
-		
 		<script type="text/javascript">		
 			window.onload = function(){
 				// fake list
@@ -37,11 +35,10 @@
        	<h2>Tischübersicht</h2>
        	
        	<ul class="desks mobileList"> 
-				<li>
-					<a onclick="javascript: document.location = 'cashier.html?deskid=1';">
-						<div class="deskName">Tisch 1</div>
-						<div class="deskAmount">39.90 CHF</div>
-					</a>
+               <!-- Hack for iPhone Webapp Mode -->
+				<li onclick="javascript: document.location = 'cashier.html?deskid=1';">
+					<div class="deskName">Tisch 1</div>
+					<div class="deskAmount">39.90 CHF</div>
 			    </li>
 	    </ul>
 	</body>

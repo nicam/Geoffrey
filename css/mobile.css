@@ -1,4 +1,3 @@
-
 header{
 	top: 0px;
 	text-align: center;
@@ -45,6 +44,8 @@ header a, header button {
 body{
 	margin-top: 40px;
 	margin-bottom: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .mobileList li{
