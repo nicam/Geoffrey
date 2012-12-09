@@ -1,83 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>iPad Default Layout</title>
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/mobile.css" rel="stylesheet" />
-    <link href="css/ipadLayout.css" rel="stylesheet" />
-    <link href="css/buttons.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  </head>
-  <body>
-      <header>Geoffrey</header>
+	<head>
+		<title>iPad Default Layout</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/bootstrap.used.css" />
+		<link href="css/mobile.css" rel="stylesheet" />
+		<link href="css/ipadLayout.css" rel="stylesheet" />
+		<link href="css/buttons.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('article').on('click', function(event) {
+					var e = $(this);
+					var o = e.find('div.order'); o = o[0]; o = $(o);
+					if(!e.hasClass('active')) {
+						e.addClass('active');
+						o.show();
+					}
+					else {
+						e.removeClass('active');
+						o.hide();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>Geoffrey</header>
       
-      <div class="orderContainer">
-          <div class="order">
-              <div>
-                  <span>#1</span> Bestellung
-              </div>
-              <div class="items">
-                  <form method="POST">
-                    
-                    <input id="bier1" type="checkbox" value="1">
-                    <label for="bier1">Bier</label>
-                    <br>
-                    
-                    <input id="bier2" type="checkbox" value="1">
-                    <label for="bier2">Bier</label>
-                    <br />
-                    
-                    <input id="bier3" type="checkbox" value="1">
-                    <label for="bier3">Bier</label>
-                    <br />
-                    
-                    <input id="bier4" type="checkbox" value="1">
-                    <label for="bier4">Bier</label>
-                    <br />
+		<article class="active">
+			<div class="table">
+				<h3>#1</h3>
+			</div>
+      		<div class="order">
+				<div class="items">
+					<form method="POST">
+						<input id="bier1" type="checkbox" value="1">
+						<label for="bier1">Bier</label>
+						<br>
 
-                    <input id="bier5" type="checkbox" value="1">
-                    <label for="bier5">Bier</label>
-                    <br />
+						<input id="bier2" type="checkbox" value="1">
+						<label for="bier2">Bier</label>
+						<br />
 
-                    <input id="bier6" type="checkbox" value="1">
-                    <label for="bier6">Bier</label>
-                    <br />
+						<input id="bier3" type="checkbox" value="1">
+						<label for="bier3">Bier</label>
+						<br />
 
-                    <input id="bier7" type="checkbox" value="1">
-                    <label for="bier7">Bier</label>
-                    <br />
+						<input id="bier4" type="checkbox" value="1">
+						<label for="bier4">Bier</label>
+						<br />
 
+						<input id="bier5" type="checkbox" value="1">
+						<label for="bier5">Bier</label>
+						<br />
 
-                    <input type="submit" class="bt_green" value="Bestellung abschliessen">
-                  </form>
-              </div>
-          </div>
-      </div>
+						<input id="bier6" type="checkbox" value="1">
+						<label for="bier6">Bier</label>
+						<br />
 
-      <div class="orderContainer">
-        <div class="order">
-            <span>#2</span> Bestellung
-        </div>
-      </div>
+						<input id="bier7" type="checkbox" value="1">
+						<label for="bier7">Bier</label>
+						<br /><br />
 
-    <div class="orderContainer">
-        <div class="order">
-            <span>#3</span> Bestellung
-        </div>
-    </div>
+						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+					</form>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div class="table">
+				<h3>#2</h3>
+			</div>
+			<div class="order" style="display:none;">
+				<div class="items">
+					<form method="POST">
+						<input id="bier1" type="checkbox" value="1">
+						<label for="bier1">Bier</label>
+						<br>
 
-    <div class="orderContainer">
-        <div class="order">
-            <span>#3</span> Zahlungsbegehren
-        </div>
-    </div>
+						<input id="bier2" type="checkbox" value="1">
+						<label for="bier2">Bier</label>
+						<br />
 
-    <div class="clear"></div>
-    <footer>
-        <ul>
-          <li><a href="orders.html">Bestellungen / Zahlungsbegehren</a></li>
-          <li><a href="openPositions.html">offene Positionen</a></li>
-        </ul>
-    </footer>
-  </body>
+						<input id="bier3" type="checkbox" value="1">
+						<label for="bier3">Bier</label>
+						<br /><br />
+
+						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+					</form>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div class="table">
+				<h3>#3</h3>
+			</div>
+			<div class="order" style="display:none;">
+				<div class="items">
+					<form method="POST">
+						<input id="bier1" type="checkbox" value="1">
+						<label for="bier1">Bier</label>
+						<br>
+
+						<input id="bier2" type="checkbox" value="1">
+						<label for="bier2">Bier</label>
+						<br />
+
+						<input id="bier3" type="checkbox" value="1">
+						<label for="bier3">Bier</label>
+						<br /><br />
+
+						<button type="submit" class="btn btn-success">Bestellung abschliessen</button>
+					</form>
+				</div>
+			</div>
+		</article>
+		<div class="clear"></div>
+		<footer>
+			<ul>
+				<li><a href="orders.html">Bestellungen / Zahlungsbegehren</a></li>
+				<li><a href="openPositions.html">offene Positionen</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
