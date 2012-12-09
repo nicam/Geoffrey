@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QR-Code Liste</title>
+		
+		<script type="text/javascript">		
+			window.onload = function(){
+				// fake list
+				var li = document.getElementsByTagName("tr")[0];
+				for(var i=0; i<10; i++){
+					var newli = li.cloneNode(true);
+					li.parentNode.appendChild(newli);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<img src="img/QRCode.png" />
+				</td>
+				<td>
+					http://localhost/Geoffrey/iphone_menu.html
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
