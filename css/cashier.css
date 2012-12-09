@@ -63,6 +63,10 @@ body{
 	margin-bottom: 110px;
 }
 
+.mobileList {
+    cursor: pointer;
+}
+
 .mobileList .active{
 	background: rgb(53,249,9); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(53,249,9,1) 0%, rgba(86,226,93,1) 44%, rgba(100,214,87,1) 100%); /* FF3.6+ */
