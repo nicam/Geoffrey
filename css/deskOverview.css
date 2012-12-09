@@ -24,11 +24,16 @@ h2{
 }
 
 .desks li .deskName{
-	float: left;
+	display: inline-block;
 }
 
 .desks li .deskAmount{
 	float: right;
+}
+
+.mobileList a {
+    width: 100%;
+    display: block;
 }
 
 body{
